@@ -4,9 +4,7 @@
 }
 
 <html>
-<head>
-    <title>Document</title>
-</head>
+<head></head>
 <body>
     <div class="row">
         @using (Html.BeginForm("Index", "InvNumero", FormMethod.Post))
@@ -16,14 +14,14 @@
             <div class="form-group">
                 <label for="Num">Numero:</label>
                 <input type="number" id="Num" class="form-control" name="Num" min="10" max="99" value="@Model.Num" />
-            </div>
-
-            <button type="submit" class="btn btn-info" id="inv" value="inv" name="inversion">Invertir</button>
+            </div>                      
 
             <div class="form-group">
                 <label for="InvNum">Numero Invertido:</label>
                 <input type="text" id="InvNum" class="form-control" name="InvNum" value="@Model.InvNum" readonly/>
             </div>
+        
+            <button type="submit" class="btn btn-info" id="inv" value="inv" name="inversion">Invertir</button>
         }
     </div>
 </body>
